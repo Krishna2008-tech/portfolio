@@ -1,0 +1,214 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   /* background-color: #222831; */
+   /* background-color:#EEEEEE ; */
+    /* enables you to define how you want the height and width of an element to be calculated  */
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+/* .navbar {
+  height: 10vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: rgb(215, 248, 248);
+}
+.navbar a {
+    margin: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+   
+}
+.navbar a:hover{
+    color: rgb(244, 57, 57);
+    scale: 1.2;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+} */
+#contact{
+    margin-right: 85px;
+}
+.home_pg{
+    height: 90vh;
+    display: flex;
+}
+.content{
+    /* background-color: aqua; */
+    width: 50%;
+    text-align: justify;
+    padding-left: 10%;
+    padding-top: 14%;
+    text-wrap: normal;
+    flex-wrap: wrap;
+}
+h1{
+    /* background-color: aqua; */
+    margin-bottom: 0;
+}
+.h1 {
+    margin-bottom: 20px;
+    /* margin-bottom: 25px; */
+   /* animation: typing 4s steps(24) forwards, blink 0.7s infinite; */
+}
+p{
+    margin-bottom: 25px;
+    font-size: small;
+}
+/* #animatedText{
+    animation: typing 4s steps(24) forwards, blink 0.7s infinite;
+} */
+#button{
+    height: 2.5rem;
+    width:10rem ;
+    background-color: rgb(244, 57, 57);
+    border: none;
+    border-radius: 2px;
+    color: white;
+}
+#button:hover{
+    scale: 1.2;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    
+}
+.photo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#photo1{
+  /* background-color: aqua; */
+  height: 275px;
+  width: 300px;
+  border-radius: 50%;
+  
+  
+}
+#photo1:hover{
+    filter: drop-shadow(rgb(126, 214, 251) 0.5rem 0.5rem 1rem);
+    /* cursor: pointer; */
+
+}
+                                    /* here starts home page 2 */
+.recent_work{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.project{
+    background-color: rgb(1, 1, 1);
+    height: 200px;
+    width: 200px;
+
+}
+.heading{
+    text-align: center;
+    width: 100%;
+}
+.project:hover{
+    scale: 1.2;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+.project > a > img{
+    height: 200px;
+    width:200px;
+}
+                                        /* here starts study page  */
+
+/* .Study{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.study_section01{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+} */
+/* Study Section */
+.Study {
+  padding: 60px 10%;
+  background: #f9f9f9;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  text-align: center;
+}
+
+/* Heading */
+.Study .heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #0077b6;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+/* Grid Layout */
+.study_section01 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Project Card */
+.project {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Project Images */
+.project img {
+  max-width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.project:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Study {
+    padding: 40px 5%;
+  }
+  .Study .heading {
+    font-size: 2rem;
+  }
+  .project img {
+    max-width: 110px;
+  }
+}
+
+
+ 
+

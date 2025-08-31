@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css" /> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <title>Portfolio - Engineering Graduate</title>
+    <meta name="description" content="Professional portfolio of a fresh engineering graduate showcasing skills, projects, and expertise">
+
+    <meta property="og:title" content="Portfolio - Engineering Graduate">
+    <meta property="og:description" content="Professional portfolio showcasing skills, projects, and expertise">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+     <!-- Production version -->
+<script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+     <link rel="stylesheet" href="stylesheet.css" />
+     <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+      <!-- Navigation -->
+    <nav id="navigation" class="nav-bar">
+        <div class="container">
+            <div class="nav-content">
+                <button class="logo-btn" onclick="scrollToTop()">
+                    <span class="text-gradient">Portfolio</span>
+                </button>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-desktop">
+                    <button class="nav-btn" onclick="scrollToSection('about')">About</button>
+                    <button class="nav-btn" onclick="scrollToSection('skills')">Skills</button>
+                    <button class="nav-btn" onclick="scrollToSection('projects')">Projects</button>
+                    <button class="nav-btn" onclick="scrollToSection('education')">Education</button>
+                    <button class="nav-btn" onclick="scrollToSection('contact')">Contact</button>
+                    <button class="btn btn-primary">
+                        <i data-lucide="download"></i>
+                        Resume
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <i id="menu-icon" data-lucide="menu"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-nav">
+                <div class="mobile-nav-content">
+                    <button class="nav-btn-mobile" onclick="scrollToSection('about')">About</button>
+                    <button class="nav-btn-mobile" onclick="scrollToSection('skills')">Skills</button>
+                    <button class="nav-btn-mobile" onclick="scrollToSection('projects')">Projects</button>
+                    <button class="nav-btn-mobile" onclick="scrollToSection('education')">Education</button>
+                    <button class="nav-btn-mobile" onclick="scrollToSection('contact')">Contact</button>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                        <i data-lucide="download"></i>
+                        Download Resume
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="navbar">
+      <a href="work.html">My Work</a>
+      <a href="#">Blog</a>
+      <a href="#">Companies</a>
+      <a href="#Study_section">Study</a>
+      <a id="contact" href="#">Contact Me</a>
+    </div> -->
+    <hr />
+    <div class="home_pg">
+      <div class="content">
+        <h1>Hi, i am Krishna,</h1><br>
+        <h1 class="h1">Web Developer</h1>
+
+        <p>
+          I’m a passionate web developer skilled in creating responsive and
+          user-friendly websites using HTML, CSS, JavaScript, and frameworks
+          like React and Django. I enjoy turning ideas into functional,
+          interactive web solutions.
+        </p>
+        <a href="../asserts/Krishna_Resume.pdf" download="Krishna_Resume.pdf">
+          <button id="button">Download Resume</button>
+        </a>
+      </div>
+      <div class="photo">
+        <img id="photo1" src="./images/Flux_Dev_A_young_adult_coder_with_short_brown_hair_and_a_focus_3.jpg" alt="INF" />
+      </div>
+    </div>
+     <section id="about" class="section section-muted">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">About Me</div>
+                <h2 class="section-title">
+                    Passionate About <span class="text-gradient">Innovation</span>
+                </h2>
+                <p class="section-description">
+                    As a fresh engineering graduate, I bring enthusiasm, modern technical skills, 
+                    and a fresh perspective to every project. I'm eager to contribute to meaningful 
+                    work and grow alongside experienced professionals.
+                </p>
+            </div>
+                              <!-- About Section -->
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>My Journey</h3>
+                    <div class="about-paragraphs">
+                        <p>
+                            Throughout my engineering studies, I've been fascinated by how technology 
+                            can solve real-world problems. From my first "Hello World" program to 
+                            complex system designs, every challenge has been a stepping stone.
+                        </p>
+                        <p>
+                            I've worked on various academic and personal projects that have helped me 
+                            understand not just the technical aspects, but also the importance of 
+                            user experience, scalability, and maintainable code.
+                        </p>
+                        <p>
+                            Now, I'm ready to bring my skills, energy, and fresh perspective to a 
+                            dynamic team where I can continue learning while making meaningful contributions.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i data-lucide="code"></i>
+                        </div>
+                        <div>
+                            <h4>Problem Solver</h4>
+                            <p>Love tackling complex challenges with clean, efficient code</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i data-lucide="lightbulb"></i>
+                        </div>
+                        <div>
+                            <h4>Quick Learner</h4>
+                            <p>Constantly exploring new technologies and best practices</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i data-lucide="target"></i>
+                        </div>
+                        <div>
+                            <h4>Goal-Oriented</h4>
+                            <p>Focused on delivering high-quality results on time</p>
+                        </div>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <div>
+                            <h4>Team Player</h4>
+                            <p>Collaborate effectively in cross-functional teams</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                         <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="badge">Technical Skills</div>
+                <h2 class="section-title">
+                    My <span class="text-gradient">Tech Stack</span>
+                </h2>
+                <p class="section-description">
+                    A comprehensive overview of the technologies and tools I work with, 
+                    constantly expanding through learning and hands-on projects.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript/TypeScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Java</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C++</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend Technologies -->
+                <div class="skill-category">
+                    <h3>Frontend Technologies</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React/Next.js</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML/CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Tailwind CSS</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Vue.js</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Database -->
+                <div class="skill-category">
+                    <h3>Backend & Database</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MongoDB</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PostgreSQL</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>REST APIs</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Others -->
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git/GitHub</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Docker</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AWS Basics</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Linux</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications-card">
+                <h3>Certifications & Learning</h3>
+                <div class="certifications-list">
+                    <span class="certification-badge">AWS Cloud Practitioner (In Progress)</span>
+                    <span class="certification-badge">Google Cloud Digital Leader</span>
+                    <span class="certification-badge">Meta Front-End Developer Certificate</span>
+                    <span class="certification-badge">freeCodeCamp Full Stack Development</span>
+                </div>
+                <p class="certifications-note">
+                    Always learning and staying updated with the latest technologies and industry best practices
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- /* here stats home page 2 */ -->
+    <!-- <h1 class="heading">My Work</h1>
+    <div class="recent_work">
+        <div class="project">project1</div>
+        <div class="project">project2</div>
+        <div class="project">project2</div>
+    </div>
+                               /* Study Section Starts here */ -->
+   
+    <div class="Study">
+      <h1 class="heading" id="Study_section">Study</h1>
+      <div class="study_section01">
+          <div class="project">
+        <a href="./html_notes/htmlNotes.html" target="_blank"
+          ><img
+            src="./asserts/html_logo.png"
+            alt="#"
+            height="200px"
+            width="200px"
+        /></a>
+      </div>
+      <div class="project">
+        <a href="./css_notes/cssnotes.html" target="_blank"
+          ><img src="./asserts/css.png" alt="#"
+        /></a>
+      </div>
+      <div class="project">
+        <a href="./javaScript_notes/javaScriptNotes.html" target="_blank"
+          ><img
+            src="./images/javascript_image.jpg"
+            alt="#"
+            style="background-color: aqua"
+        /></a>
+      </div>
+      <div class="project">
+        <a href="./Java_Notes/java.html" target="_blank">
+          <img
+            src="./images/java logo.png"
+            alt="#"
+            style="background-color: aqua"/>
+        </a>
+      </div>
+      </div>
+      
+    </div>
+     <footer class="footer">
+        <div class="container">
+            <p>© 2025 Krishna Pandey . Built with HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
