@@ -233,7 +233,7 @@ document.addEventListener('click', function(event) {
     const target = event.target;
     
     // Handle resume download buttons
-    if (target.textContent && target.textContent.includes('./resume/KRISHNA.P_RESUME.pdf')) {
+    if (target.textContent && target.textContent.includes('KRISHNA.P_RESUME.pdf')) {
         event.preventDefault();
         alert('Resume download functionality would be implemented here. Please add your actual resume file and update the link.');
     }
@@ -455,4 +455,5 @@ window.portfolioFunctions = {
     scrollToTop,
     toggleMobileMenu,
     closeMobileMenu
+
 };
