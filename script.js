@@ -233,14 +233,14 @@ document.addEventListener('click', function(event) {
     const target = event.target;
     
     // Handle resume download buttons
-    if (target.textContent && target.textContent.includes('KRISHNA.P_RESUME.pdf')) {
+    if (target.textContent && target.textContent.includes('KRISHNA.P_RESUME.PDF')) {
         event.preventDefault();
         alert('Resume download functionality would be implemented here. Please add your actual resume file and update the link.');
     }
     
     // Handle email buttons
     if (target.textContent && target.textContent.includes('Email')) {
-        const email = 'your.email@example.com';
+        const email = 'krishnapandey372717@gmail.com';
         window.location.href = `mailto:${email}?subject=Portfolio Inquiry&body=Hi, I found your portfolio website and would like to connect.`;
     }
     
@@ -258,13 +258,13 @@ document.addEventListener('click', function(event) {
         
         switch(iconName) {
             case 'github':
-                window.open('https://github.com/yourusername', '_blank');
+                window.open('https://github.com/Krishna2008-tech', '_blank');
                 break;
             case 'linkedin':
-                window.open('https://linkedin.com/in/yourusername', '_blank');
+                window.open('https://www.linkedin.com/in/krishna-pandey-b04132280/', '_blank');
                 break;
             case 'mail':
-                window.location.href = 'mailto:your.email@example.com';
+                window.location.href = 'mailto:krishnapandey372717@gmail.com';
                 break;
         }
     }
@@ -457,3 +457,4 @@ window.portfolioFunctions = {
     closeMobileMenu
 
 };
+
